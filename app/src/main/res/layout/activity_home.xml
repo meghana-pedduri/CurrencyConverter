@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/yourOrders"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_main_round"
+            android:text="Your Orders"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/txtbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_gravity="left"
+            android:text="Book"
+            android:textColor="@color/main_blue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+             />
+
+        <TextView
+            android:id="@+id/txtcurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_gravity="left"
+            android:text="Currency"
+            android:textColor="@color/main_blue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txtcurrency2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:text="Currency"
+            android:layout_marginLeft="30sp"
+            android:layout_gravity="left"
+            />
+
+        <Spinner
+            android:id="@+id/chooseCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/afn"
+            android:textColor="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@+id/txtamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Amount"
+            android:layout_marginLeft="30sp"
+            android:layout_gravity="left"
+            android:layout_marginVertical="10dp"
+             />
+
+
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_input_with_border"
+            android:hint="Amount" />
+
+        <Button
+            android:id="@+id/convertbutton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/btn_main_round"
+            android:fontFamily="@font/convergence"
+            android:text="Convert"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Result in INR"
+            android:layout_marginLeft="30sp"
+            android:layout_gravity="left"
+            />
+
+
+
+        <EditText
+            android:id="@+id/resultInINR"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_input_with_border_2"
+            android:enabled="false"
+            android:hint="@string/converted_amount"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+
+            tools:ignore="LabelFor" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/placeOrder"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/btn_main_round"
+            android:fontFamily="@font/convergence"
+            android:text="Place Order"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
